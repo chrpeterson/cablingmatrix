@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="copyright" content="© Copyright ,  Hewlett Packard Enterprise Development LP"><link rel="stylesheet" type="text/css" href="hpefonts.css"><link rel="stylesheet" type="text/css" href="style.css"><title>Cable routing: Bays 1 and 2 8Premium</title><script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/jquery.js"></script><script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/can.jquery.js"></script><script src="https://h50007.www5.hpe.com/hfws/us/en/hpe/latest.r?contentType=js"></script></head><body><div id="header" class="header"></div><a name="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A"><!-- --></a><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Cable routing: Bays 1 and 2 8Premium</h1><div class="body refbody"><section class="section" id="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A__GUID-28683088-5209-4A7F-B784-6FF9840796B9"><a name="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A__GUID-28683088-5209-4A7F-B784-6FF9840796B9"><!-- --></a> 
+		<figure class="fig fignone" id="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A__FIG_345E1E5CDF244359B4DB1222A800BD6E"><a name="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A__FIG_345E1E5CDF244359B4DB1222A800BD6E"><!-- --></a><p class="p"><strong class="ph b">Bay 1 to system board</strong> 
+		  </p><br><a name="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A__IMAGE_B6615139A8B24D67BD646367578B3DD8"><!-- --></a><img class="image" id="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A__IMAGE_B6615139A8B24D67BD646367578B3DD8" src="mag_011.png"><br></figure> 
+		<p class="p"><strong class="ph b">Bay 2 to system board 
+		  </strong>
+		</p><br><a name="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A__IMAGE_FFE1863ED4D34A4687F9276F2E8C0424"><!-- --></a><img class="image" id="GUID-D2031DEA-18D0-4B6C-9AB2-E1BF571BF49A__IMAGE_FFE1863ED4D34A4687F9276F2E8C0424" src="mag_012.png"><br> 
+	 </section></div></article></main><script>
+            (function (document) {
+            'use strict';
+            var TableFilter = (function (Arr) {
+            var _input;
+
+            function
+            _onInputEvent(e) {
+            _input = e.target;
+            var tables =
+            document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function (table) {
+            Arr.forEach.call(table.tBodies, function (tbody) {
+            Arr.forEach.call(tbody.rows, _filter);
+            }
+            );
+            });
+            }
+
+            function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display =
+            text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+
+            return {
+            init: function () {
+            var inputs = document.getElementsByClassName('tableFilter');
+            Arr.forEach.call(inputs, function (input) {
+            input.oninput = _onInputEvent;
+            }
+            );
+            }
+            };
+            })(Array.prototype);
+            document.addEventListener('readystatechange', function () {
+            if
+            (document.readyState === 'complete') {
+            TableFilter.init();
+            }
+            });
+            })(document);
+        </script><div id="footer" class="footer"></div></body></html>
