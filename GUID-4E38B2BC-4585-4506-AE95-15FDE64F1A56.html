@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="copyright" content="© Copyright ,  Hewlett Packard Enterprise Development LP"><link rel="stylesheet" type="text/css" href="hpefonts.css"><link rel="stylesheet" type="text/css" href="style.css"><title>Cable routing: External USB 2.0 cable</title><script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/jquery.js"></script><script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/can.jquery.js"></script><script src="https://h50007.www5.hpe.com/hfws/us/en/hpe/latest.r?contentType=js"></script></head><body><div id="header" class="header"></div><a name="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56"><!-- --></a><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Cable routing: External USB 2.0 cable</h1><div class="body refbody"><section class="section" id="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56__GUID-D112BDFB-E170-4F1C-9159-126C712C0D3F"><a name="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56__GUID-D112BDFB-E170-4F1C-9159-126C712C0D3F"><!-- --></a> 
+		<p class="p"><strong class="ph b">Front 2SFF to system board</strong> 
+		</p> 
+		<figure class="fig fignone" id="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56__FIG_DC9079ED2A3140449F31FFE97A016AE5"><a name="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56__FIG_DC9079ED2A3140449F31FFE97A016AE5"><!-- --></a><br><a name="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56__IMAGE_2B6876A1D9AE4060A16F1B45E48899BE"><!-- --></a><img class="image" id="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56__IMAGE_2B6876A1D9AE4060A16F1B45E48899BE" src="mag_017.png"><br></figure> 
+		<figure class="fig fignone" id="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56__FIG_3529C6022CAE4871965FF9A0441B03CF"><a name="GUID-4E38B2BC-4585-4506-AE95-15FDE64F1A56__FIG_3529C6022CAE4871965FF9A0441B03CF"><!-- --></a></figure> 
+	 </section></div></article></main><script>
+            (function (document) {
+            'use strict';
+            var TableFilter = (function (Arr) {
+            var _input;
+
+            function
+            _onInputEvent(e) {
+            _input = e.target;
+            var tables =
+            document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function (table) {
+            Arr.forEach.call(table.tBodies, function (tbody) {
+            Arr.forEach.call(tbody.rows, _filter);
+            }
+            );
+            });
+            }
+
+            function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display =
+            text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+
+            return {
+            init: function () {
+            var inputs = document.getElementsByClassName('tableFilter');
+            Arr.forEach.call(inputs, function (input) {
+            input.oninput = _onInputEvent;
+            }
+            );
+            }
+            };
+            })(Array.prototype);
+            document.addEventListener('readystatechange', function () {
+            if
+            (document.readyState === 'complete') {
+            TableFilter.init();
+            }
+            });
+            })(document);
+        </script><div id="footer" class="footer"></div></body></html>

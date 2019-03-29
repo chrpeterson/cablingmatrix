@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="copyright" content="© Copyright ,  Hewlett Packard Enterprise Development LP"><link rel="stylesheet" type="text/css" href="hpefonts.css"><link rel="stylesheet" type="text/css" href="style.css"><title>Cable routing: Rear 2SFF SAS/SATA riser drive options</title><script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/jquery.js"></script><script src="https://h50007.www5.hpe.com/caas-static/js/framework/jquery/v-1-8/can.jquery.js"></script><script src="https://h50007.www5.hpe.com/hfws/us/en/hpe/latest.r?contentType=js"></script></head><body><div id="header" class="header"></div><a name="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE"><!-- --></a><main role="main"><article role="article" aria-labelledby="ariaid-title1"><h1 class="title topictitle1" id="ariaid-title1">Cable routing: Rear 2SFF SAS/SATA riser drive options</h1><div class="body refbody"><section class="section" id="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__GUID-682551FB-5C80-45BC-B533-E8643CE4EA43"><a name="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__GUID-682551FB-5C80-45BC-B533-E8643CE4EA43"><!-- --></a> 
+		<p class="p"><strong class="ph b">Rear 2SFF drive option to a SAS Expander, both in the primary slot</strong> 
+		</p> 
+		<figure class="fig fignone" id="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__FIG_345E1E5CDF244359B4DB1222A800BD6E"><a name="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__FIG_345E1E5CDF244359B4DB1222A800BD6E"><!-- --></a><br><a name="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__IMAGE_C09DA18F037B4829A56B989978A4A79A"><!-- --></a><img class="image" id="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__IMAGE_C09DA18F037B4829A56B989978A4A79A" src="mob_131.png"><br></figure> 
+		<p class="p"><strong class="ph b">Rear 2SFF drive option in the secondary slot to a SAS Expander in the primary slot 
+		  </strong> 
+		</p> 
+		<figure class="fig fignone" id="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__FIG_9136A8413AB34F38A8DE986C63092DEE"><a name="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__FIG_9136A8413AB34F38A8DE986C63092DEE"><!-- --></a><br><a name="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__IMAGE_A12F1AA8BBA94E72A3042864799C1005"><!-- --></a><img class="image" id="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__IMAGE_A12F1AA8BBA94E72A3042864799C1005" src="mob_132.png"><br></figure> 
+		<p class="p"><strong class="ph b">Rear 2SFF drive option above the power supplies to a controller</strong> 
+		</p> 
+		<figure class="fig fignone" id="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__FIG_521A404148994C029E3B98E31B8F2E91"><a name="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__FIG_521A404148994C029E3B98E31B8F2E91"><!-- --></a><br><a name="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__IMAGE_E0BCFD5F8CE94AB59B259B06D47E67E7"><!-- --></a><img class="image" id="GUID-884FBD5A-8C1E-46FD-8C81-6667862AAEEE__IMAGE_E0BCFD5F8CE94AB59B259B06D47E67E7" src="mob_133.png"><br></figure> 
+	 </section></div></article></main><script>
+            (function (document) {
+            'use strict';
+            var TableFilter = (function (Arr) {
+            var _input;
+
+            function
+            _onInputEvent(e) {
+            _input = e.target;
+            var tables =
+            document.getElementsByClassName(_input.getAttribute('data-table'));
+            Arr.forEach.call(tables, function (table) {
+            Arr.forEach.call(table.tBodies, function (tbody) {
+            Arr.forEach.call(tbody.rows, _filter);
+            }
+            );
+            });
+            }
+
+            function _filter(row) {
+            var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+            row.style.display =
+            text.indexOf(val) === -1 ? 'none' : 'table-row';
+            }
+
+            return {
+            init: function () {
+            var inputs = document.getElementsByClassName('tableFilter');
+            Arr.forEach.call(inputs, function (input) {
+            input.oninput = _onInputEvent;
+            }
+            );
+            }
+            };
+            })(Array.prototype);
+            document.addEventListener('readystatechange', function () {
+            if
+            (document.readyState === 'complete') {
+            TableFilter.init();
+            }
+            });
+            })(document);
+        </script><div id="footer" class="footer"></div></body></html>
