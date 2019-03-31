@@ -9,15 +9,49 @@
 
 		
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="arstyle.css">
+
 		
 </head>
 	
 <style>
 	
+html, body{
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+}
+
+#camera, #camera--view, #camera--sensor, #camera--output{
+position: fixed;
+height: 100%;
+width: 100%;
+object-fit: cover;
+z-index: -10;
+}
+
+
+.image {
+width: 75%;
+position: absolute;
+top: 0;
+z-index: 10;
+  margin-top: 5%;
+}
+
+
+#flex {
+display: flex;
+justify-content: center;
+  height: 100vh;
+width: 100vw;
+
+}
+
+
+
 #camera--view {
 resize: none;}
-		
 </style>
 	
 <body>
